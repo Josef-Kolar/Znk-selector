@@ -1,0 +1,21 @@
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Zonky</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div id="zonky">
+    <label>Credit rating:</label>
+    <select v-model="creditAmount">
+      <option>Select rating</option>
+      <option v-for="ratingType in ratingTypes" :value="ratingType.amount">{{ ratingType.rating }}</option>
+    </select>
+    <p>Credit amount: <b>{{ creditAmount }} CZK</b></p>
+    <p class="cr"><i>V roce 2019 vypracoval Josef Kolář</i></p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

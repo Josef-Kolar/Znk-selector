@@ -1,0 +1,22 @@
+#zonky {
+  margin: 0 auto;
+  margin-top: 110px;
+  padding: 30px;
+  width: 250px;
+  height: 55px;
+  border: 1px solid #000;
+  background-color: #FFFFC0;
+  position: relative;
+}
+
+p, label {
+  font-family: Arial;
+}
+
+p.cr {
+  font-size: 8px;
+  position: absolute;
+  bottom: -5px;
+  right: 5px;
+  color: #C0C0C0;
+}
